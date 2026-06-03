@@ -3,8 +3,67 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title>PSEG Centro de Pesquisa Clínica — Neurologia em São Paulo</title>
-<meta name="description" content="Centro de pesquisa clínica independente, especializado em neurologia e doenças raras. Vila Clementino, São Paulo.">
+
+<title>PSEG — Centro de Pesquisa Clínica em Neurologia · Vila Clementino, São Paulo</title>
+<meta name="description" content="Centro de pesquisa clínica especializado em neurologia e doenças raras na Vila Clementino, São Paulo. Estudos clínicos em epilepsia, Alzheimer, Parkinson, esclerose múltipla, enxaqueca crônica, neuropatias raras e doenças neuromusculares (ELA, AME, distrofias). Avaliação de elegibilidade sem custo.">
+<meta name="keywords" content="pesquisa clínica, estudo clínico, neurologia, centro de pesquisa, Vila Clementino, São Paulo, epilepsia, Alzheimer, Parkinson, esclerose múltipla, enxaqueca crônica, neuropatia, ELA, AME, distrofia muscular, doenças neuromusculares, neurologistas, Dr. Paulo Sgobbi, UNIFESP, ABN, AAN, voluntário pesquisa">
+<meta name="author" content="PSEG Centro de Pesquisa Clínica S.A.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://psegpesquisa.com.br/">
+
+<!-- Open Graph (WhatsApp, Facebook, LinkedIn, Discord) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="PSEG Centro de Pesquisa Clínica">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="https://psegpesquisa.com.br/">
+<meta property="og:title" content="PSEG — Centro de Pesquisa Clínica em Neurologia · São Paulo">
+<meta property="og:description" content="Centro especializado em neurologia e doenças raras na Vila Clementino. Estudos clínicos em epilepsia, Alzheimer, Parkinson, esclerose múltipla e doenças neuromusculares. Avaliação sem custo.">
+<meta property="og:image" content="https://psegpesquisa.com.br/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PSEG Centro de Pesquisa Clínica — Conectando pacientes ao futuro da neurologia">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PSEG — Centro de Pesquisa Clínica em Neurologia · São Paulo">
+<meta name="twitter:description" content="Estudos clínicos em neurologia e doenças raras na Vila Clementino, São Paulo. Avaliação sem custo.">
+<meta name="twitter:image" content="https://psegpesquisa.com.br/og-image.jpg">
+
+<!-- Structured data: MedicalOrganization -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "MedicalOrganization",
+ "name": "PSEG Centro de Pesquisa Clínica",
+ "alternateName": ["PSEG", "PSEG Centro de Pesquisa Clínica S.A."],
+ "url": "https://psegpesquisa.com.br/",
+ "logo": "https://psegpesquisa.com.br/og-image.jpg",
+ "image": "https://psegpesquisa.com.br/og-image.jpg",
+ "description": "Centro independente de pesquisa clínica especializado em neurologia e doenças raras, localizado na Vila Clementino, São Paulo. Conduz estudos clínicos em epilepsia, Alzheimer, Parkinson, esclerose múltipla, enxaqueca crônica, neuropatias raras, AVC e doenças neuromusculares.",
+ "medicalSpecialty": "Neurology",
+ "areaServed": { "@type": "Country", "name": "Brasil" },
+ "telephone": "+551137919596",
+ "email": "contato@psegtrials.com",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Rua Borges Lagoa, 1.060 — Cj. 133/134/135",
+  "addressLocality": "São Paulo",
+  "addressRegion": "SP",
+  "postalCode": "04038-002",
+  "addressCountry": "BR"
+ },
+ "founder": {
+  "@type": "Physician",
+  "name": "Dr. Paulo Victor Sgobbi de Souza",
+  "jobTitle": "Diretor Médico e Investigador Principal",
+  "identifier": "CRM-SP 168.975",
+  "medicalSpecialty": ["Neurology", "Neuromuscular Diseases"],
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Universidade Federal de São Paulo (UNIFESP) — Escola Paulista de Medicina" }
+ },
+ "sameAs": []
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -14,6 +73,11 @@ body { font-family: 'DM Sans', sans-serif; -webkit-font-smoothing: antialiased; 
 img, video, iframe, svg { max-width: 100%; height: auto; }
 section { overflow-x: hidden; }
 h1, h2, h3, p { overflow-wrap: break-word; word-wrap: break-word; }
+/* Conteúdo do noscript fica visível só quando JS desabilitado */
+.no-js-content { font-family: 'DM Sans', sans-serif; max-width: 900px; margin: 0 auto; padding: 40px 24px; color: #1a2b3c; line-height: 1.7; }
+.no-js-content h1 { font-size: 28px; color: #1E2247; margin-bottom: 12px; }
+.no-js-content h2 { font-size: 20px; color: #1E2247; margin: 32px 0 8px; }
+.no-js-content a { color: #088CB0; }
 </style>
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
@@ -21,6 +85,39 @@ h1, h2, h3, p { overflow-wrap: break-word; word-wrap: break-word; }
 </head>
 <body>
 <div id="root"></div>
+
+<noscript>
+<div class="no-js-content">
+ <h1>PSEG — Centro de Pesquisa Clínica em Neurologia</h1>
+ <p><strong>Vila Clementino, São Paulo.</strong> Centro independente de pesquisa clínica especializado em neurologia e doenças raras. Conduzimos estudos clínicos em epilepsia, doença de Alzheimer, doença de Parkinson, esclerose múltipla, enxaqueca crônica, neuropatias raras, AVC e doenças neuromusculares (ELA, AME, distrofias musculares, miopatias hereditárias).</p>
+
+ <h2>Investigador Principal</h2>
+ <p>Dr. Paulo Victor Sgobbi de Souza (CRM-SP 168.975) — Diretor Médico e Investigador Principal. Médico neurologista com formação acadêmica pela Escola Paulista de Medicina da UNIFESP, doutor em Ciências pelo Programa de Neurologia e Neurociências da UNIFESP. Atuação dedicada à pesquisa clínica em condições neurológicas, com foco em doenças neuromusculares. Membro da Academia Brasileira de Neurologia (ABN), American Academy of Neurology (AAN) e World Muscle Society (WMS).</p>
+
+ <h2>Áreas terapêuticas</h2>
+ <p>Epilepsia · Doença de Alzheimer · Doença de Parkinson · Esclerose Múltipla · Enxaqueca Crônica · Neuropatias Raras (incluindo amiloidose TTR) · AVC e Reabilitação · Doenças Neuromusculares (ELA, AME, distrofias, miopatias hereditárias).</p>
+
+ <h2>O que é pesquisa clínica</h2>
+ <p>Pesquisa clínica é o processo pelo qual novos medicamentos e tratamentos são testados em voluntários humanos antes da aprovação para uso amplo. É um processo rigoroso, fiscalizado pela ANVISA e por comitês de ética independentes (CEP/CONEP). O participante recebe acompanhamento médico especializado, exames regulares e os medicamentos do estudo sem nenhum custo.</p>
+
+ <h2>Para pacientes</h2>
+ <p>Convive com uma condição neurológica e quer saber se há um estudo adequado para o seu caso? A avaliação de elegibilidade é sem custo e sem compromisso. Entre em contato:</p>
+ <ul>
+  <li>WhatsApp: <a href="https://api.whatsapp.com/send?phone=5511913323742">(11) 91332-3742</a></li>
+  <li>Telefone: (11) 3791-9596</li>
+  <li>E-mail: <a href="mailto:contato@psegtrials.com">contato@psegtrials.com</a></li>
+ </ul>
+
+ <h2>Endereço</h2>
+ <p>Rua Borges Lagoa, 1.060 — Conjuntos 133/134/135<br>Vila Clementino — São Paulo, SP — CEP 04038-002</p>
+
+ <h2>Para patrocinadores e CROs</h2>
+ <p>Centro 100% dedicado à pesquisa clínica, com farmácia clínica, sala de coleta e tratamento, ultrafreezer −70°C e equipe treinada em ICH-GCP. Experiência em estudos de Fase I a IV em neurologia e doenças neuromusculares.</p>
+
+ <p style="margin-top:32px; font-size:13px; color:#5A6F82;">Este site requer JavaScript habilitado para exibir o conteúdo interativo completo.</p>
+</div>
+</noscript>
+
 <script type="text/babel">
 const { useState, useCallback } = React;
 

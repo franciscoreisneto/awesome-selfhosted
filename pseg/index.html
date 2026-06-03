@@ -31,32 +31,21 @@ const C = { navy:"#1E2247", teal:"#5CC2D7", td:"#088CB0", tl:"#BEE2E5", tf:"#F0F
 const PI = {
  name:"Dr. Paulo Victor Sgobbi de Souza", role:"Diretor Médico · Investigador Principal",
  crm:"CRM-SP 168.975", spec:"Neurologia · Doenças Neuromusculares",
- bio:"Médico neurologista com formação acadêmica pela Escola Paulista de Medicina da Universidade Federal de São Paulo (UNIFESP): Graduação em Medicina (2009–2014), Residência em Neurologia Clínica (2015–2018) e Doutorado em Ciências pelo Programa de Neurologia e Neurociências (2018–2022). Especialista em doenças neuromusculares, com atuação dedicada à pesquisa clínica em condições neurológicas raras.",
- affiliations:["Doutorado em Ciências — Programa de Neurologia e Neurociências da UNIFESP","Residência em Neurologia Clínica — UNIFESP / Escola Paulista de Medicina","Graduação em Medicina — Escola Paulista de Medicina (UNIFESP)","Diretor Médico — PSEG Centro de Pesquisa Clínica"],
- memberships:["Membro da Academia Brasileira de Neurologia (ABN)","Membro dos Departamentos Científicos de Doença do Neurônio Motor / ELA, Doenças Neuromusculares e Neuropatias Periféricas — ABN","Membro da American Academy of Neurology (AAN)","Membro da World Muscle Society (WMS)"],
+ bio:"Médico neurologista com formação acadêmica pela Escola Paulista de Medicina da Universidade Federal de São Paulo (UNIFESP). Doutor em Ciências pelo Programa de Neurologia e Neurociências da UNIFESP. Atuação dedicada à pesquisa clínica em condições neurológicas, com foco em doenças neuromusculares.",
+ affiliations:["Doutorado em Ciências — Programa de Neurologia e Neurociências (UNIFESP)","Residência em Neurologia Clínica — UNIFESP / Escola Paulista de Medicina","Graduação em Medicina — Escola Paulista de Medicina (UNIFESP)","Diretor Médico — PSEG Centro de Pesquisa Clínica"],
+ memberships:["Membro da Academia Brasileira de Neurologia (ABN)","Membro da American Academy of Neurology (AAN)","Membro da World Muscle Society (WMS)"],
  areas:["ELA","AME","Distrofias Musculares","Miopatias Hereditárias","Neuropatias Hereditárias","Amiloidose TTR","Paraplegia Espástica","Doenças Neurometabólicas"],
 };
 
 const CONDITIONS = [
- { name:"Epilepsia", icon:"bolt", desc:"A epilepsia é uma das condições neurológicas mais comuns, afetando cerca de 50 milhões de pessoas no mundo. Caracteriza-se por crises recorrentes causadas por descargas elétricas anormais no cérebro. Cerca de 30% dos pacientes não respondem adequadamente aos medicamentos disponíveis — são as chamadas epilepsias refratárias. A PSEG conduz estudos com novas terapias antiepilépticas que buscam oferecer alternativas para esses pacientes.", who:"Adultos com epilepsia de difícil controle que já tentaram pelo menos 2 medicamentos sem resultado satisfatório.", studies:"Fase II e III" },
- { name:"Alzheimer", icon:"puzzle", desc:"A doença de Alzheimer é a causa mais comum de demência, afetando a memória, o raciocínio e o comportamento. No Brasil, estima-se que mais de 1,2 milhão de pessoas convivam com a doença. As pesquisas atuais focam em anticorpos monoclonais e tratamentos modificadores de doença que buscam retardar a progressão nos estágios iniciais — quando a intervenção pode fazer mais diferença.", who:"Pacientes com diagnóstico recente de Alzheimer leve a moderado, geralmente acima de 55 anos.", studies:"Fase II e III" },
- { name:"Parkinson", icon:"hands", desc:"A doença de Parkinson é uma condição neurodegenerativa progressiva que afeta o movimento, causando tremores, rigidez e lentidão. Atinge cerca de 200 mil brasileiros. Os estudos em andamento investigam terapias que vão além do controle de sintomas — buscando retardar ou modificar a progressão da doença.", who:"Pacientes com Parkinson recém-diagnosticado ou em estágio inicial, com ou sem tratamento atual.", studies:"Fase II e III" },
+ { name:"Epilepsia", icon:"bolt", desc:"A epilepsia é uma das condições neurológicas mais comuns. Caracteriza-se por crises recorrentes causadas por descargas elétricas anormais no cérebro. Parte dos pacientes não responde adequadamente aos medicamentos disponíveis — são as chamadas epilepsias refratárias. A PSEG conduz estudos com novas terapias antiepilépticas que buscam oferecer alternativas para esses pacientes.", who:"Adultos com epilepsia de difícil controle que já tentaram pelo menos 2 medicamentos sem resultado satisfatório.", studies:"Fase II e III" },
+ { name:"Alzheimer", icon:"puzzle", desc:"A doença de Alzheimer é a causa mais comum de demência, afetando a memória, o raciocínio e o comportamento. As pesquisas atuais focam em anticorpos monoclonais e tratamentos modificadores de doença que buscam retardar a progressão nos estágios iniciais — quando a intervenção pode fazer mais diferença.", who:"Pacientes com diagnóstico recente de Alzheimer leve a moderado, geralmente acima de 55 anos.", studies:"Fase II e III" },
+ { name:"Parkinson", icon:"hands", desc:"A doença de Parkinson é uma condição neurodegenerativa progressiva que afeta o movimento, causando tremores, rigidez e lentidão. Os estudos em andamento investigam terapias que vão além do controle de sintomas — buscando retardar ou modificar a progressão da doença.", who:"Pacientes com Parkinson recém-diagnosticado ou em estágio inicial, com ou sem tratamento atual.", studies:"Fase II e III" },
  { name:"Esclerose Múltipla", icon:"link", desc:"A esclerose múltipla é uma doença autoimune que afeta o sistema nervoso central, causando fadiga, dificuldade de movimento e alterações visuais. Atinge predominantemente adultos jovens. A PSEG participa de estudos com novos imunomoduladores orais e injetáveis que buscam reduzir surtos e retardar a progressão da incapacidade.", who:"Pacientes com EM recorrente-remitente ou progressiva, entre 18 e 55 anos.", studies:"Fase III" },
- { name:"Enxaqueca Crônica", icon:"sparkle", desc:"A enxaqueca crônica é definida por 15 ou mais dias de dor de cabeça por mês, sendo pelo menos 8 com características de enxaqueca. Afeta cerca de 2% da população e compromete significativamente a qualidade de vida. Os estudos atuais investigam anticorpos monoclonais e novas abordagens preventivas que podem reduzir a frequência e intensidade das crises.", who:"Adultos com enxaqueca crônica (≥15 dias/mês) há pelo menos 3 meses.", studies:"Fase III e IV" },
- { name:"Neuropatias Raras", icon:"microscope", desc:"As neuropatias raras incluem condições como amiloidose por transtirretina (TTR), neuropatia de Charcot-Marie-Tooth e polineuropatias hereditárias. São doenças com poucos tratamentos disponíveis e grande necessidade médica não atendida. A PSEG, sob liderança do Dr. Paulo Sgobbi — especialista em doenças neuromusculares — participa de estudos globais para essas condições.", who:"Pacientes com diagnóstico confirmado de neuropatia rara, encaminhados por neurologista.", studies:"Fase I a III" },
+ { name:"Enxaqueca Crônica", icon:"sparkle", desc:"A enxaqueca crônica é definida por 15 ou mais dias de dor de cabeça por mês, sendo pelo menos 8 com características de enxaqueca. Compromete significativamente a qualidade de vida. Os estudos atuais investigam anticorpos monoclonais e novas abordagens preventivas que podem reduzir a frequência e intensidade das crises.", who:"Adultos com enxaqueca crônica (≥15 dias/mês) há pelo menos 3 meses.", studies:"Fase III e IV" },
+ { name:"Neuropatias Raras", icon:"microscope", desc:"As neuropatias raras incluem condições como amiloidose por transtirretina (TTR), neuropatia de Charcot-Marie-Tooth e polineuropatias hereditárias. São doenças com poucos tratamentos disponíveis e grande necessidade médica não atendida. A PSEG, com investigador principal especializado em doenças neuromusculares, atua na área de neuropatias raras.", who:"Pacientes com diagnóstico confirmado de neuropatia rara, encaminhados por neurologista.", studies:"Fase I a III" },
  { name:"AVC e Reabilitação", icon:"heartPulse", desc:"O acidente vascular cerebral (AVC) é uma das principais causas de incapacidade no Brasil. Após o AVC, a recuperação funcional depende de reabilitação intensiva e, em alguns casos, de novas terapias neuroprotetoras. A PSEG conduz estudos que investigam abordagens inovadoras para melhorar a recuperação motora e cognitiva após o AVC.", who:"Pacientes com AVC recente (até 6 meses) em fase de reabilitação.", studies:"Fase II" },
- { name:"Doenças Neuromusculares", icon:"muscle", desc:"As doenças neuromusculares incluem ELA (esclerose lateral amiotrófica), atrofia muscular espinhal (AME), distrofias musculares e miopatias hereditárias. São condições progressivas que afetam a força e a função muscular. A PSEG tem expertise especial nesta área — o Dr. Paulo Sgobbi é referência nacional em doenças neuromusculares, com doutorado e mais de 200 publicações no tema.", who:"Pacientes com diagnóstico de ELA, AME, distrofia muscular ou miopatia hereditária.", studies:"Fase I e II" },
-];
-
-const TRIALS = [
- { condition:"Epilepsia", phase:"Fase III", status:"Recrutando", desc:"Estudo multicêntrico com nova terapia antiepiléptica para adultos com epilepsia refratária que não responderam a pelo menos 2 medicamentos. Acompanhamento de 12 meses com neurologista." },
- { condition:"Alzheimer", phase:"Fase II", status:"Recrutando", desc:"Estudo com anticorpo monoclonal para pacientes com Alzheimer em estágio inicial. Avaliações cognitivas regulares e exames de imagem incluídos." },
- { condition:"Enxaqueca Crônica", phase:"Fase III", status:"Recrutando", desc:"Estudo com novo preventivo para pacientes com enxaqueca crônica (≥15 dias/mês). Duração de 6 meses com acompanhamento mensal." },
- { condition:"Parkinson", phase:"Fase III", status:"Em análise", desc:"Estudo com terapia modificadora de doença para pacientes com Parkinson recém-diagnosticado. Início previsto para o próximo trimestre." },
- { condition:"Esclerose Múltipla", phase:"Fase III", status:"Em análise", desc:"Estudo com novo imunomodulador oral para pacientes com EM recorrente-remitente. Protocolo em revisão ética." },
- { condition:"Neuropatia Rara", phase:"Fase II", status:"Cadastro de interesse", desc:"Estudo global para pacientes com polineuropatia amiloidótica familiar (amiloidose TTR). Coordenação com centros internacionais." },
- { condition:"ELA", phase:"Fase II", status:"Cadastro de interesse", desc:"Estudo com nova molécula para pacientes com esclerose lateral amiotrófica. Pré-cadastro aberto para avaliação futura." },
- { condition:"Doenças Neuromusculares", phase:"Fase I/II", status:"Cadastro de interesse", desc:"Estudo com terapia gênica para distrofias musculares hereditárias. Dr. Paulo Sgobbi como investigador principal." },
+ { name:"Doenças Neuromusculares", icon:"muscle", desc:"As doenças neuromusculares incluem ELA (esclerose lateral amiotrófica), atrofia muscular espinhal (AME), distrofias musculares e miopatias hereditárias. São condições progressivas que afetam a força e a função muscular. A PSEG tem expertise dedicada nesta área, com investigador principal especializado em doenças neuromusculares.", who:"Pacientes com diagnóstico de ELA, AME, distrofia muscular ou miopatia hereditária.", studies:"Fase I e II" },
 ];
 
 const FAQS = [
@@ -316,18 +305,15 @@ function HomePage({ go }) {
  {/* AREAS — 4x2 dark grid */}
  <section style={{ background:`linear-gradient(160deg, ${C.navy}, #0d3a5c)`, padding:"80px 24px" }}>
   <div style={{ maxWidth:1200, margin:"0 auto" }}>
-  <Head tag="Áreas terapêuticas" title="Neurologia é a nossa especialidade" sub="Conduzimos estudos em diversas condições neurológicas. Clique para saber mais." light/>
+  <Head tag="Áreas terapêuticas" title="Neurologia é a nossa especialidade" sub="Conduzimos pesquisa clínica em diversas condições neurológicas." light/>
   <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(240px, 1fr))", gap:16 }}>
    {CONDITIONS.map((a,i)=>(
-   <HoverCard key={i} style={{ padding:24, background:"rgba(255,255,255,0.04)", borderRadius:12, border:"1px solid rgba(255,255,255,0.08)", cursor:"pointer" }} onClick={()=>go?.("estudos")}>
+   <HoverCard key={i} style={{ padding:24, background:"rgba(255,255,255,0.04)", borderRadius:12, border:"1px solid rgba(255,255,255,0.08)", cursor:"default" }}>
     <div style={{ display:"flex", alignItems:"center", gap:12, marginBottom:10 }}>
     <Icon name={a.icon} size={22} color="#fff"/>
     <span style={{ fontSize:15, fontWeight:600, color:"#fff" }}>{a.name}</span>
     </div>
     <div style={{ fontSize:12.5, color:"rgba(255,255,255,0.45)", lineHeight:1.65 }}>{a.desc}</div>
-    <div style={{ marginTop:10 }}>
-    <span style={{ fontSize:10, padding:"3px 10px", borderRadius:10, background:"rgba(77,174,199,0.15)", color:C.tl, fontWeight:500 }}>{a.studies}</span>
-    </div>
    </HoverCard>
    ))}
   </div>
@@ -341,7 +327,7 @@ function HomePage({ go }) {
    <div style={{ fontSize:11, letterSpacing:4, color:C.tl, textTransform:"uppercase", fontWeight:600, marginBottom:12 }}>Para patrocinadores e CROs</div>
    <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:28, fontWeight:600, color:"#fff", margin:"0 0 16px", lineHeight:1.3 }}>Centro de pesquisa clínica especializado em neurologia</h2>
    <p style={{ fontSize:15, color:"rgba(255,255,255,0.55)", lineHeight:1.8, margin:"0 0 28px" }}>
-   Equipe com experiência em Fase I a IV, localização próxima ao Hospital São Paulo e infraestrutura dedicada à pesquisa clínica.
+   Equipe com experiência em Fase I a IV, localização privilegiada em hub médico de referência e infraestrutura dedicada à pesquisa clínica.
    </p>
    <Btn onClick={()=>go("sponsors")}>Ver capacidades completas →</Btn>
   </div>
@@ -369,7 +355,7 @@ function HomePage({ go }) {
    <div style={{ fontSize:13, color:C.td, fontWeight:600, marginBottom:4 }}>{PI.role} · {PI.crm}</div>
    <p style={{ fontSize:14, color:C.m, lineHeight:1.8, margin:"0 0 12px" }}>{PI.bio}</p>
    <div style={{ display:"flex", flexWrap:"wrap", gap:6, marginBottom:12 }}>
-   {["ABN","AAN","WMS","UNIFESP","FAPESP"].map((t,i)=><span key={i} style={{ padding:"3px 10px", borderRadius:20, background:C.tf, fontSize:11, color:C.td, fontWeight:600, border:`1px solid ${C.lt}` }}>{t}</span>)}
+   {["ABN","AAN","WMS","UNIFESP"].map((t,i)=><span key={i} style={{ padding:"3px 10px", borderRadius:20, background:C.tf, fontSize:11, color:C.td, fontWeight:600, border:`1px solid ${C.lt}` }}>{t}</span>)}
    </div>
    <div style={{ fontSize:12, color:C.m, lineHeight:1.7 }}>
     Áreas: ELA · AME · Distrofias musculares · Miopatias e neuropatias hereditárias · Doenças neurometabólicas
@@ -447,125 +433,9 @@ function PacientesPage({ go }) {
    </div>
   ))}
   </div>
-  <div style={{ textAlign:"center", marginTop:36 }}><Btn onClick={()=>go("estudos")}>Ver estudos abertos →</Btn></div>
+  <div style={{ textAlign:"center", marginTop:36 }}><Btn href={`https://api.whatsapp.com/send?phone=${PH}&text=${encodeURIComponent("Olá, gostaria de saber se posso participar de algum estudo da PSEG.")}`}>Falar com nossa equipe →</Btn></div>
  </Sec>
  </>);
-}
-
-function EstudosPage() {
- // Página unificada: Estudos agrupados POR CONDIÇÃO
- // Cada condição é um bloco expansível; dentro, lista de estudos com status e fase
- const [open, setOpen] = useState({}); // { "Epilepsia": true }
- const [f, setF] = useState("Todos");
- const sts = ["Todos","Recrutando","Em análise","Cadastro de interesse"];
- const statusColors = {"Recrutando":"#27AE60","Em análise":"#D4870E","Cadastro de interesse":C.m};
-
- // Agrupa estudos por condição. Mapeamento das condições da PSEG.
- // Adapta nomes (ex: "ELA" -> "Doenças Neuromusculares"; "Neuropatia Rara" -> "Neuropatias Raras")
- const condMap = {
-  "ELA":"Doenças Neuromusculares",
-  "Neuropatia Rara":"Neuropatias Raras",
- };
- const grouped = {};
- CONDITIONS.forEach(c => { grouped[c.name] = { cond:c, trials:[] }; });
- TRIALS.forEach(t => {
-  const name = condMap[t.condition] || t.condition;
-  if (grouped[name]) grouped[name].trials.push(t);
- });
-
- // Aplica filtro de status
- const filterFn = t => f==="Todos" || t.status===f;
- const condsToShow = CONDITIONS.filter(c => {
-  if (f==="Todos") return true;
-  return grouped[c.name].trials.some(filterFn);
- });
-
- return (<>
- <Sec>
-  <Head tag="Estudos e Condições" title="Em que pesquisamos hoje" sub="Estudos clínicos em andamento na PSEG, agrupados pela condição que tratam. Clique em uma condição para ver os estudos disponíveis."/>
-
-  {/* AVISO: lista preliminar */}
-  <div style={{ maxWidth:920, margin:"0 auto 28px", padding:"14px 20px", background:"#FFF9E6", border:"1px solid #F0D060", borderRadius:10, display:"flex", gap:12, alignItems:"flex-start" }}>
-   <span style={{ fontSize:18, lineHeight:1 }}>⚠️</span>
-   <div>
-    <div style={{ fontSize:13, fontWeight:600, color:"#7A5C00", marginBottom:2 }}>Lista preliminar — aguardando atualização</div>
-    <div style={{ fontSize:12, color:"#7A5C00", lineHeight:1.5 }}>As condições e estudos abaixo refletem áreas de atuação do centro. A lista oficial de estudos ativos em recrutamento está sendo atualizada. Para confirmar elegibilidade ou estudos disponíveis, entre em contato pelo WhatsApp ou e-mail.</div>
-   </div>
-  </div>
-
-  <div style={{ display:"flex", gap:8, justifyContent:"center", marginBottom:32, flexWrap:"wrap" }}>
-  {sts.map(st=><button key={st} onClick={()=>setF(st)} style={{ padding:"8px 18px", borderRadius:24, border:`1.5px solid ${f===st?C.td:C.lt}`, background:f===st?C.tf:C.w, color:f===st?C.td:C.m, fontSize:13, fontWeight:500, cursor:"pointer" }}>{st}</button>)}
-  </div>
-
-  <div style={{ display:"flex", flexDirection:"column", gap:14, maxWidth:920, margin:"0 auto" }}>
-  {condsToShow.map((c,i)=>{
-   const trials = grouped[c.name].trials.filter(filterFn);
-   const isOpen = open[c.name];
-   return (
-   <div key={i} style={{ background:C.cd, borderRadius:12, border:`1px solid ${isOpen?C.teal+"60":C.lt}`, overflow:"hidden", transition:"all 0.2s" }}>
-    {/* HEADER da condição — sempre visível */}
-    <div onClick={()=>setOpen({...open, [c.name]:!isOpen})} style={{ padding:"20px 24px", display:"flex", justifyContent:"space-between", alignItems:"center", cursor:"pointer" }}>
-    <div style={{ display:"flex", gap:14, alignItems:"center", flex:1 }}>
-     <Icon name={c.icon} size={24} color={C.td}/>
-     <div>
-     <div style={{ fontSize:17, fontWeight:600, color:C.navy, fontFamily:"'Outfit',sans-serif" }}>{c.name}</div>
-     <div style={{ fontSize:12, color:C.m, marginTop:2 }}>{trials.length} {trials.length===1?"estudo":"estudos"} · {c.studies}</div>
-     </div>
-    </div>
-    <span style={{ fontSize:20, color:C.m, transform:isOpen?"rotate(45deg)":"none", transition:"transform 0.2s" }}>+</span>
-    </div>
-
-    {/* CONTEÚDO expandido */}
-    {isOpen && (
-    <div style={{ padding:"0 24px 24px", borderTop:`1px solid ${C.lt}` }}>
-     {/* Descrição da condição */}
-     <p style={{ fontSize:14, color:C.m, lineHeight:1.8, margin:"18px 0 8px" }}>{c.desc}</p>
-     <p style={{ fontSize:13, color:C.tx, lineHeight:1.7, margin:"0 0 22px" }}><strong style={{ color:C.navy }}>Quem pode participar:</strong> {c.who}</p>
-
-     {/* Lista de estudos */}
-     {trials.length > 0 ? (
-     <div style={{ display:"flex", flexDirection:"column", gap:10 }}>
-      <div style={{ fontSize:11, letterSpacing:2, textTransform:"uppercase", color:C.td, fontWeight:600, marginBottom:4 }}>Estudos em {c.name}</div>
-      {trials.map((t,j)=>(
-      <div key={j} style={{ background:C.w, borderRadius:10, border:`1px solid ${C.lt}`, padding:"16px 18px" }}>
-       <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", flexWrap:"wrap", gap:8, marginBottom:8 }}>
-       <div style={{ display:"flex", gap:10, alignItems:"center", flexWrap:"wrap" }}>
-        <span style={{ fontSize:13, fontWeight:600, color:C.navy }}>{t.phase}</span>
-        <span style={{ fontSize:11, padding:"3px 12px", borderRadius:12, background:`${statusColors[t.status]}15`, color:statusColors[t.status], fontWeight:600 }}>{t.status}</span>
-       </div>
-       </div>
-       <p style={{ fontSize:13.5, color:C.m, lineHeight:1.65, margin:"0 0 12px" }}>{t.desc}</p>
-       <Btn href={`https://api.whatsapp.com/send?phone=${PH}&text=${encodeURIComponent("Olá, gostaria de saber se posso participar do estudo de "+c.name+". Podem me orientar?")}`} small>Quero saber se posso participar</Btn>
-      </div>
-      ))}
-     </div>
-     ) : (
-     <div style={{ background:C.w, borderRadius:10, border:`1px solid ${C.lt}`, padding:"18px 20px", textAlign:"center" }}>
-      <p style={{ fontSize:13, color:C.m, lineHeight:1.7, margin:"0 0 12px" }}>Nenhum estudo aberto no momento para esta condição. Você pode se cadastrar para ser avisado quando um novo estudo for aberto.</p>
-      <Btn href={`https://api.whatsapp.com/send?phone=${PH}&text=${encodeURIComponent("Olá, tenho interesse em saber se existe algum estudo clínico para "+c.name+". Podem me orientar?")}`} small>Cadastrar interesse</Btn>
-     </div>
-     )}
-    </div>
-    )}
-   </div>
-   );
-  })}
-  </div>
- </Sec>
-
- <Sec bg={C.tf}>
-  <div style={{ maxWidth:640, margin:"0 auto", textAlign:"center" }}>
-  <h3 style={{ fontFamily:"'Outfit',sans-serif", fontSize:22, fontWeight:600, color:C.navy, margin:"0 0 12px" }}>Sua condição não está na lista?</h3>
-  <p style={{ fontSize:14, color:C.m, lineHeight:1.75, margin:"0 0 20px" }}>Novas pesquisas surgem constantemente. Entre em contato e nossa equipe verificará se existe um estudo adequado para o seu caso.</p>
-  <Btn href={`https://api.whatsapp.com/send?phone=${PH}&text=Gostaria%20de%20saber%20se%20existe%20estudo%20para%20minha%20condição`}>Fale com nossa equipe</Btn>
-  </div>
- </Sec>
- </>);
-}
-
-function CondicoesPage() {
- // Mantida apenas como fallback caso algum link antigo aponte aqui — redireciona via render para EstudosPage
- return <EstudosPage/>;
 }
 
 function SponsorsPage() {
@@ -603,12 +473,12 @@ function SponsorsPage() {
   <Head tag="Capacidades" title="Por que patrocinadores escolhem a PSEG"/>
   <div style={{ display:"grid", gridTemplateColumns:"repeat(auto-fit, minmax(270px, 1fr))", gap:24 }}>
   {[
-  {icon:"brain",t:"Especialização em Neurologia",d:"Expertise dedicada em neurologia e doenças raras. Investigador principal com doutorado pela UNIFESP em Neurologia e Neurociências, com publicações em periódicos científicos e atuação como Professor Afiliado em Neurologia Clínica."},
+  {icon:"brain",t:"Especialização em Neurologia",d:"Expertise dedicada em neurologia e doenças raras. Investigador principal com doutorado pela UNIFESP em Neurologia e Neurociências, com atuação clínica e científica dedicada à pesquisa em condições neurológicas."},
    {icon:"person",t:"Recrutamento Qualificado",d:"Equipe estruturada para condução de estudos multicêntricos. Base de pacientes com encaminhamento ativo por especialistas em doenças neuromusculares e neurodegenerativas."},
    {icon:"bolt",t:"Ativação Eficiente do Centro",d:"Equipe treinada em ICH-GCP, documentação regulatória padronizada e processos definidos para acelerar o início do recrutamento (FPI — First Patient In)."},
    {icon:"microscope",t:"Estrutura 100% Dedicada",d:"Centro independente, sem competição com rotina assistencial. Farmácia clínica, sala de coleta e tratamento, equipamentos de monitoramento e salas de monitoria com acesso direto aos dados."},
    {icon:"chart",t:"Qualidade Auditável",d:"Aderência a ICH-GCP, gestão ativa de questionamentos (queries) e padrões de documentação compatíveis com auditorias internacionais."},
-   {icon:"hospital",t:"Conexão Internacional",d:"Investigador principal com vínculo a sociedades científicas internacionais — American Academy of Neurology (AAN), World Muscle Society (WMS) — e histórico de publicações científicas em colaboração."},
+   {icon:"hospital",t:"Conexão Internacional",d:"Investigador principal com vínculo a sociedades científicas internacionais — American Academy of Neurology (AAN) e World Muscle Society (WMS)."},
   ].map((s,i)=>(
    <HoverCard key={i} style={{ padding:28, background:C.cd, borderRadius:12, border:`1px solid ${C.lt}` }}>
    <div style={{ marginBottom:14 }}><IconCircle name={s.icon}/></div>
@@ -792,7 +662,7 @@ function EstruturaPage() {
   <div style={{ textAlign:"center", maxWidth:760, margin:"0 auto", color:"#fff" }}>
   <div style={{ fontSize:11, letterSpacing:2.5, textTransform:"uppercase", color:C.tl, fontWeight:600, marginBottom:14 }}>Localização</div>
   <h2 style={{ fontFamily:"'Outfit',sans-serif", fontSize:"clamp(24px, 4vw, 34px)", fontWeight:600, color:"#fff", margin:"0 0 16px", letterSpacing:-0.3 }}>Vila Clementino · São Paulo</h2>
-  <p style={{ fontSize:15, color:"rgba(255,255,255,0.7)", lineHeight:1.8, margin:"0 0 28px" }}>A 200 metros do Hospital São Paulo, em um dos principais hubs de saúde da América Latina, com acesso direto pela estação Hospital São Paulo da Linha 5-Lilás.</p>
+  <p style={{ fontSize:15, color:"rgba(255,255,255,0.7)", lineHeight:1.8, margin:"0 0 28px" }}>Em um dos principais hubs de saúde da América Latina, com fácil acesso por metrô e proximidade a centros hospitalares de referência.</p>
   <div style={{ background:"rgba(255,255,255,0.06)", borderRadius:14, border:"1px solid rgba(255,255,255,0.1)", padding:"24px 28px", display:"inline-block" }}>
    <div style={{ fontSize:15, fontWeight:600, color:"#fff", marginBottom:4 }}>Rua Borges Lagoa, 1.060 · Cj. 133/134/135</div>
    <div style={{ fontSize:13, color:"rgba(255,255,255,0.55)" }}>Vila Clementino · São Paulo – SP · 04038-002</div>
@@ -907,13 +777,11 @@ function App() {
   };
  }, [menuOpen, isMobile]);
 
- const nav = [{id:"home",l:"Home"},{id:"pacientes",l:"Pacientes"},{id:"sponsors",l:"Patrocinadores"},{id:"estudos",l:"Estudos e Condições"},{id:"equipe",l:"Equipe"},{id:"estrutura",l:"Estrutura"},{id:"faq",l:"FAQ"}];
+ const nav = [{id:"home",l:"Home"},{id:"pacientes",l:"Pacientes"},{id:"sponsors",l:"Patrocinadores"},{id:"equipe",l:"Equipe"},{id:"estrutura",l:"Estrutura"},{id:"faq",l:"FAQ"}];
 
  const render = () => {
  switch(pg) {
   case "pacientes": return <PacientesPage go={go}/>;
-  case "estudos": return <EstudosPage/>;
-  case "condicoes": return <CondicoesPage/>;
   case "sponsors": return <SponsorsPage go={go}/>;
   case "equipe": return <EquipePage/>;
   case "estrutura": return <EstruturaPage/>;
@@ -999,7 +867,7 @@ function App() {
    </div>
    <div style={{ flex:"1 1 120px" }}>
     <div style={{ fontSize:11, fontWeight:600, color:"#fff", marginBottom:10 }}>Para Pacientes</div>
-    {[["pacientes","O que é Pesquisa"],["estudos","Estudos e Condições"],["equipe","Equipe"],["estrutura","Estrutura"],["faq","FAQ"]].map(([id,l],i)=><div key={i} onClick={()=>go(id)} style={{ fontSize:11, color:"rgba(255,255,255,0.25)", marginBottom:6, cursor:"pointer" }}>{l}</div>)}
+    {[["pacientes","O que é Pesquisa"],["equipe","Equipe"],["estrutura","Estrutura"],["faq","FAQ"]].map(([id,l],i)=><div key={i} onClick={()=>go(id)} style={{ fontSize:11, color:"rgba(255,255,255,0.25)", marginBottom:6, cursor:"pointer" }}>{l}</div>)}
    </div>
    <div style={{ flex:"1 1 120px" }}>
     <div style={{ fontSize:11, fontWeight:600, color:"#fff", marginBottom:10 }}>Institucional</div>
